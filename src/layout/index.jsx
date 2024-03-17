@@ -1,4 +1,5 @@
 import React from "react";
+import { HashRouter, Routes } from "react-router-dom";
 
 const Layout = (props) => {
   return (
@@ -17,7 +18,7 @@ const Layout = (props) => {
         >
           title
         </div>
-        <div>{props.children}</div>
+        <HashRouter>{props.children}</HashRouter>
       </div>
     </div>
   );

@@ -1,8 +1,16 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+import One from "./pages/01";
+import Two from "./pages/02";
 import "./index.less";
 
 const Content = () => {
-  return <h1 style={{ height: "2000vh" }}>Content</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<One />} />
+      <Route path="/two" element={<Two />} />
+    </Routes>
+  );
 };
 
 export default Content;
